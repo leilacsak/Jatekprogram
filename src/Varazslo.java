@@ -1,4 +1,5 @@
 import java.util.Random;
+// A Varázsló karaktere mint a másik játékos.
 class Varazslo {
     private int eletero;
 
