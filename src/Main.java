@@ -4,6 +4,7 @@ public class Main {
         Varazslo varazslo = new Varazslo();
 
         Jatek jatek = new Jatek(harcos, varazslo);
-        jatek.game();
+        jatek.game(); // A game() metódusban a játék addig fut, amíg mindkét karakternek van életereje.
     }
 }
+
