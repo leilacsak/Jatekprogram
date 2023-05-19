@@ -1,5 +1,5 @@
 import java.util.Random;
-
+// A harcos karaktere mint az egyik játékos.
 class Harcos {
     private int eletero;
 
