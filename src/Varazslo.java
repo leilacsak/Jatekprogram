@@ -1,5 +1,4 @@
 import java.util.Random;
-
 class Varazslo {
     private int eletero;
 
@@ -13,7 +12,11 @@ class Varazslo {
     }
 
     public void setEletero(int eletero) {
-        this.eletero = eletero;
+        if (eletero > 0) {
+            this.eletero = eletero;
+        } else {
+            this.eletero = 0;
+        }
     }
 
     public void tamad(Harcos harcos) {
