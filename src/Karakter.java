@@ -26,9 +26,9 @@ class Karakter {
 
             if (karakter.getEletero() <= 0) {
                 if (jatekter.charAt(pozicio) != 'X') {
-                    throw new HarcException(jatekter.toString() + " --> H:" + getEletero() + ", V:" + karakter.getEletero() + " A " + karakter.getClass().getSimpleName() + " meghalt! ");
+                    throw new HarcException(jatekter + " --> H:" + getEletero() + ", V:" + karakter.getEletero() + " A " + karakter.getClass().getSimpleName() + " meghalt! ");
                 } else {
-                    throw new HarcException(jatekter.toString() + " --> Harc: H:" + getEletero() + ", V:" + karakter.getEletero() + " A " + karakter.getClass().getSimpleName() + " meghalt! ");
+                    throw new HarcException(jatekter + " --> Harc: H:" + getEletero() + ", V:" + karakter.getEletero() + " A " + karakter.getClass().getSimpleName() + " meghalt! ");
                 }
 
             }
