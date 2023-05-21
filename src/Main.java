@@ -3,8 +3,8 @@ public class Main {
         Harcos harcos = new Harcos();
         Varazslo varazslo = new Varazslo();
 
-        Jatek jatek = new Jatek(harcos, varazslo);
-        jatek.game();
+        Jatek jatekPanel = new Jatek(harcos, varazslo);
+        jatekPanel.game();
     }
 }
 
