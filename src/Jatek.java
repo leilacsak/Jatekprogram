@@ -10,6 +10,10 @@ class Jatek {
     }
 
     public void game() {
+
+       System.out.println("Start!");
+
+        int utkozetPozicio = -1;
         while (true) {
             try {
                 Random random = new Random();
@@ -19,8 +23,6 @@ class Jatek {
                 jatekter.setCharAt(harcosPozicio, 'H');
                 jatekter.setCharAt(varazsloPozicio, 'V');
 
-
-                int utkozetPozicio;
                 if (harcosPozicio == varazsloPozicio) {
                     utkozetPozicio = harcosPozicio;
                     jatekter.setCharAt(harcosPozicio, 'X');
@@ -40,9 +42,11 @@ class Jatek {
             }
         }
 
-            if (harcos.getEletero() <= 0 && varazslo.getEletero() <= 0) {
-                System.out.println("Küzdelem vége: Döntetlen!");
+        if (harcos.getEletero() <= 0 && varazslo.getEletero() <= 0) {
+            System.out.println("Küzdelem vége: Döntetlen!");
         }
+
+        System.out.println("Game over...");
     }
 }
 
