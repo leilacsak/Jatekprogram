@@ -17,7 +17,6 @@ class Karakter {
         this.eletero = Math.max(eletero, 0);
     }
 
-
     }
 
 
