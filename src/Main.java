@@ -9,7 +9,7 @@ public class Main {
 
             JFrame frame = new JFrame("Jatekprogram");
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            frame.setSize(800, 600);
+            frame.setSize(1000, 500);
             frame.setLocationRelativeTo(null);
             frame.setResizable(false);
 
@@ -17,7 +17,10 @@ public class Main {
             frame.add(jatekPanel);
 
             JButton startButton = new JButton("Start!");
-            startButton.addActionListener(e -> jatekPanel.game());
+            startButton.addActionListener(e -> {
+                jatekPanel.game();
+                startButton.setEnabled(false);
+            });
             frame.add(startButton, BorderLayout.SOUTH);
 
             frame.setVisible(true);
