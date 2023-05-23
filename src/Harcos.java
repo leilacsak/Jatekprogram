@@ -1,6 +1,7 @@
 import java.util.Random;
 
 class Harcos extends Karakter implements Tamado {
+
     public Harcos() {
         super();
     }

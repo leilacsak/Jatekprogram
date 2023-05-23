@@ -1,9 +1,13 @@
 import java.util.Random;
 
 class Varazslo extends Karakter implements Tamado {
+
     public Varazslo() {
+
         super();
+
     }
+
 
     @Override
     public void tamad(Karakter karakter, StringBuilder jatekter, int utkozetPozicio) throws HarcException {
